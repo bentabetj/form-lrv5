@@ -2,8 +2,6 @@
 
 @section('contenu')
 
-
-
 <form action="" method="POST" role="form">
 	<legend>Form title</legend>
 

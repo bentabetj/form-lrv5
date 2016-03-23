@@ -1,6 +1,5 @@
 @extends('master')
 
-
 @section('contenu')
 
 <h1>Merci !</h1>

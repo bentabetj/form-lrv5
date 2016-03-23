@@ -26,7 +26,7 @@ class ContactRequest extends Request
         return [
             'nom' => 'required|alpha|min:3|max:50',
             'email' => 'required|email',
-            'message' => 'required|max:250' 
+            'texte' => 'required|max:250' 
         ];
     }
 }

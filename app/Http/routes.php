@@ -15,8 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-//Route::get('contact','ContactController');
-//Route::post('contact','ContactController');
+Route::get('test', function () {
+    return view('form.contact');
+});
+
+Route::get('contact','ContactController@getinfos');
+Route::post('contact','ContactController@postinfos');
 
 
 

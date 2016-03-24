@@ -15,12 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('test', function () {
-    return view('form.contact');
-});
+
 
 Route::get('contact','ContactController@getinfos');
-Route::post('contact','ContactController@postinfos');
+   Route::post('contact','ContactController@postinfos');
 
 
 
@@ -39,5 +37,6 @@ Route::post('contact','ContactController@postinfos');
 */
 
 Route::group(['middleware' => ['web']], function () {
-    //
+	
+    
 });

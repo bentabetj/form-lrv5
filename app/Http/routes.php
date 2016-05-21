@@ -11,14 +11,13 @@
 |
 */
 
-Route::get('/', function () {
+	Route::get('/', function () {
     return view('welcome');
 });
 
 
 
-Route::get('contact','ContactController@getinfos');
-   Route::post('contact','ContactController@postinfos');
+
 
 
 
@@ -37,6 +36,8 @@ Route::get('contact','ContactController@getinfos');
 */
 
 Route::group(['middleware' => ['web']], function () {
-	
+
+	Route::get('contact','ContactController@getinfos');
+Route::post('contact','ContactController@postinfos');
     
 });
